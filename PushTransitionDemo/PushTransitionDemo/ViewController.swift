@@ -14,12 +14,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet weak var kTableView: UITableView!
     
+    internal var naviTransistion: PushTransition!
+    
     // MARK: view controller
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        naviTransistion = PushTransition()
+        self.navigationController?.delegate = naviTransistion
         kTableView.backgroundColor = UIColor.clearColor()
         kTableView.backgroundView = nil
         
@@ -56,12 +60,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return 0.1
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+    func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
+        let cell = tableView.cellForRowAtIndexPath(indexPath)!
+        var convertRect: CGRect = cell.convertRect(cell.bounds, toView: AppDelegate.currentWindow())
+        if CGRectGetMaxY(convertRect) > ScreenHeight {
+            convertRect.size.height = ScreenHeight - convertRect.origin.y - 1
+        }
+        naviTransistion.convertCellRect = convertRect
+        return indexPath
     }
-    
-    // MARK: navigation controller delegate
-    
-    
 }
 

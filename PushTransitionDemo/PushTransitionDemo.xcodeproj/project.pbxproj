@@ -14,6 +14,9 @@
 		C5FE9EC41C0FF6460000368C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5FE9EC21C0FF6460000368C /* LaunchScreen.storyboard */; };
 		C5FE9ECF1C0FF6460000368C /* PushTransitionDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FE9ECE1C0FF6460000368C /* PushTransitionDemoTests.swift */; };
 		C5FE9EDA1C0FF6460000368C /* PushTransitionDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FE9ED91C0FF6460000368C /* PushTransitionDemoUITests.swift */; };
+		C5FE9EE91C1007C40000368C /* PushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FE9EE81C1007C40000368C /* PushTransition.swift */; };
+		C5FE9EEB1C1007ED0000368C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FE9EEA1C1007ED0000368C /* DetailViewController.swift */; };
+		C5FE9EEE1C101E1B0000368C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FE9EED1C101E1B0000368C /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,18 +38,21 @@
 
 /* Begin PBXFileReference section */
 		C5FE9EB61C0FF6460000368C /* PushTransitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushTransitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5FE9EB91C0FF6460000368C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C5FE9EBB1C0FF6460000368C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C5FE9EB91C0FF6460000368C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C5FE9EBB1C0FF6460000368C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C5FE9EBE1C0FF6460000368C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5FE9EC01C0FF6460000368C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5FE9EC31C0FF6460000368C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5FE9EC51C0FF6460000368C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5FE9ECA1C0FF6460000368C /* PushTransitionDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushTransitionDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5FE9ECE1C0FF6460000368C /* PushTransitionDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTransitionDemoTests.swift; sourceTree = "<group>"; };
+		C5FE9ECE1C0FF6460000368C /* PushTransitionDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = PushTransitionDemoTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C5FE9ED01C0FF6460000368C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5FE9ED51C0FF6460000368C /* PushTransitionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushTransitionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5FE9ED91C0FF6460000368C /* PushTransitionDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTransitionDemoUITests.swift; sourceTree = "<group>"; };
+		C5FE9ED91C0FF6460000368C /* PushTransitionDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = PushTransitionDemoUITests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C5FE9EDB1C0FF6460000368C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5FE9EE81C1007C40000368C /* PushTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = PushTransition.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C5FE9EEA1C1007ED0000368C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DetailViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C5FE9EED1C101E1B0000368C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +103,12 @@
 		C5FE9EB81C0FF6460000368C /* PushTransitionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C5FE9EBD1C0FF6460000368C /* Main.storyboard */,
 				C5FE9EB91C0FF6460000368C /* AppDelegate.swift */,
 				C5FE9EBB1C0FF6460000368C /* ViewController.swift */,
-				C5FE9EBD1C0FF6460000368C /* Main.storyboard */,
+				C5FE9EEA1C1007ED0000368C /* DetailViewController.swift */,
+				C5FE9EE71C1007880000368C /* Transitions */,
+				C5FE9EEC1C101DF00000368C /* Extensions */,
 				C5FE9EC01C0FF6460000368C /* Assets.xcassets */,
 				C5FE9EC21C0FF6460000368C /* LaunchScreen.storyboard */,
 				C5FE9EC51C0FF6460000368C /* Info.plist */,
@@ -125,6 +134,22 @@
 			path = PushTransitionDemoUITests;
 			sourceTree = "<group>";
 		};
+		C5FE9EE71C1007880000368C /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				C5FE9EE81C1007C40000368C /* PushTransition.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		C5FE9EEC1C101DF00000368C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C5FE9EED1C101E1B0000368C /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +160,7 @@
 				C5FE9EB21C0FF6460000368C /* Sources */,
 				C5FE9EB31C0FF6460000368C /* Frameworks */,
 				C5FE9EB41C0FF6460000368C /* Resources */,
+				C5FE9EEF1C104C3F0000368C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -251,13 +277,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C5FE9EEF1C104C3F0000368C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TAGS=\"TODO:|FIXME:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C5FE9EB21C0FF6460000368C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5FE9EEE1C101E1B0000368C /* Extensions.swift in Sources */,
 				C5FE9EBC1C0FF6460000368C /* ViewController.swift in Sources */,
+				C5FE9EE91C1007C40000368C /* PushTransition.swift in Sources */,
 				C5FE9EBA1C0FF6460000368C /* AppDelegate.swift in Sources */,
+				C5FE9EEB1C1007ED0000368C /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

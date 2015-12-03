@@ -2,7 +2,7 @@
 //  PushTransitionDemoTests.swift
 //  PushTransitionDemoTests
 //
-//  Created by caolongyao on 15/12/3.
+//  Created by CG on 15/12/3.
 //  Copyright © 2015年 iOSLittleSquad. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  PushTransitionDemo
 //
-//  Created by caolongyao on 15/12/3.
+//  Created by CG on 15/12/3.
 //  Copyright © 2015年 iOSLittleSquad. All rights reserved.
 //
 
@@ -11,11 +11,18 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    // MARK:  properties
+    
     var window: UIWindow?
 
 
+    // MARK: application delegate
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window?.backgroundColor = UIColor.brownColor()
+        
         return true
     }
 
@@ -41,6 +48,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    // MARK: public methods
+    
+    class func currentWindow() -> UIWindow {
+        let app: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let tempWindow: UIWindow = app.window!
+        return tempWindow
+    }
 
 }
 

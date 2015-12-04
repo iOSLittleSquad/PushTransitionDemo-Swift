@@ -32,9 +32,13 @@ extension UIView {
     - returns: (first-topImg, second-bottomImg).
     */
     func snapshotCutedIntoTwoPartsByPointY(y: CGFloat!) -> ( UIImage!, UIImage!) {
+        var originY: CGFloat = y
+        if originY > ScreenHeight {
+            originY = ScreenHeight - 1
+        }
         let snapshotImg: UIImage = self.snapshot()!
-        let originUpRect = CGRectMake(0, 0, ScreenWidth, y)
-        let originDownRect = CGRectMake(0, y, ScreenWidth, ScreenHeight - y)
+        let originUpRect = CGRectMake(0, 0, ScreenWidth, originY)
+        let originDownRect = CGRectMake(0, y, ScreenWidth, ScreenHeight - originY)
         
         //transform rect with the scale of snapshot image.
         let transform: CGAffineTransform = CGAffineTransformScale(CGAffineTransformIdentity, snapshotImg.scale, snapshotImg.scale)

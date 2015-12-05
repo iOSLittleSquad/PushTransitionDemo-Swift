@@ -5,7 +5,7 @@
 
 **[Objective-C版本](https://github.com/iOSLittleSquad/PushAnimationDemo.git)也已经由小组成员上传。**
 
-![image](https://github.com/iOSLittleSquad/PushTransitionDemo-Swift/blobs/master/Sources/PushTransition.gif)
+![image](https://github.com/iOSLittleSquad/PushTransitionDemo-Swift/blob/master/Sources/PushTransition.gif)
 
 ### License
 
